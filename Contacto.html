@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<meta charset= utf-8>
+<html>
+  <head>
+    <title>Nitsuga</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Inicio.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown text-light">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Cánticos</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Cantico1.html">Cántico 1</a></li>
+                <li><a class="dropdown-item" href="Cantico2.html">Cántico 2</a></li>
+                <li><a class="dropdown-item" href="Cantico3.html">Cántico 3</a></li>
+              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="Basura.html">Basura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="TodoMal.html">Todo Mal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Simon%20Kj%C3%A6r/index.html">Simon Kjær</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Derrotas.html">Sobre la página</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <script src="form.js"></script>
+    <div class="container mt-3">
+        <br><br>
+      <h2>Contacto</h2>
+      <br>
+      <form action="ContactoEnviado.html" method="get" onsubmit="return validator(); formatString();" >
+        <div class="mb-3 mt-3">
+          <label for="name" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Introduce tu nombre">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="tel" class="form-label">Teléfono:</label>
+          <input type="text" class="form-control" id="phone" name="phone" placeholder="Introduce tu número de teléfono">
+        </div>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Introduce tu correo">
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="case1" name="case1" value="Recordar">
+          <label for="device1"> Recordar</label>
+        </div>
+          <br><br>
+          
+        <h2>Sobre el Betis</h2>
+        <br>
+        <div>
+          <input type="radio" id="No" name="selected" value="No_me_gusta">
+          <label for="No">No me gusta</label>
+        </div>
+        <div>
+          <input type="radio" id="Deotro" name="selected" value="Soy_de_otro_equipo">
+          <label for="Deotro" >Soy de otro equipo</label>
+        </div>
+        <div>
+          <input type="radio" id="Viva" name="selected" value="Viva_er_Beti">
+          <label for="Viva">Viva er Beti</label>
+        </div> 
+        <br>
+       
+        <div class="checkbox">
+          <input type="checkbox" id="case2" name="case2" value="Politica y privacidad">
+          <label for="case1"> Politica y privacidad</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="case3" name="case3" value="Condiciones de uso">
+          <label for="case2"> Condiciones de uso</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="case4" name="case4" value="Recibir novedades">
+          <label for="case4"> Recibir novedades</label>
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </body>
+  <footer class="footer mt-5 py-3 bg-dark text-white sticky">
+    <div class="container text-center">
+      <p>&copy; Todos los derechos reservados a Pablo</p>
+    </div>
+  </footer>
+</html>
+
